@@ -1,0 +1,60 @@
+@font-face {
+	font-family: "Poppins";
+	src: url("../asset/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+:root {
+	--ui-yellow: #ffde12;
+	--ui-main-bg: #f6f6f8;
+	--ui-font-color: #0000;
+	--ui-light-grey: #aeaeae;
+	--ui-strong-yellow: #ffbf5e;
+}
+
+html,
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.app {
+	height: 100%;
+	display: flex;
+}
+
+.main {
+	padding: 4rem;
+	width: 80%;
+	background: var(--ui-main-bg);
+}
+
+.h-header {
+	margin: 0;
+}
+
+.no-data-main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background: var(--ui-main-bg);
+}
+
+.aside {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 2rem;
+	width: 20%;
+	background-color: white;
+}
+
+.no-aside {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+}

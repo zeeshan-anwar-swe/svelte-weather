@@ -1,0 +1,25 @@
+.forcast-container{
+    display: flex;
+    justify-content: space-between;
+    /* background: red; */
+}
+
+.forcast-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 0rem 2rem;
+    background: white;
+
+}
+
+.forcast-card img{
+    /* border:1px solid red; */
+    width: 5rem;
+}
+
+.forcast-card p span{
+    color: rgb(113, 113, 113);
+}

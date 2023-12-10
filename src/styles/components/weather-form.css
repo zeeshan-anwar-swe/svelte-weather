@@ -1,0 +1,19 @@
+.weather-form{
+    display: flex;
+    /* background: red; */
+}
+
+.weather-form input{
+    border: none;
+    outline: none;
+    margin-left: 1rem;
+    padding: 1rem 0;
+}
+
+.weather-form input::placeholder{
+    font-size: 1rem;
+}
+
+.search-icon{
+    width: 1.2rem;
+}
