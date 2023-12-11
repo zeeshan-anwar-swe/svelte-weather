@@ -10,7 +10,7 @@
         weatherLocation,
         hourlyForecast,
     } from "../../store/store";
-    
+
     let cityName;
 
     const getWeatherData = async (e) => {
@@ -27,7 +27,7 @@
                 });
 
             const getHourlyForecast = await axios.get(
-                `http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/${locationKey}?apikey=${PUBLIC_API_KEY}`
+                `https://dataservice.accuweather.com/forecasts/v1/hourly/12hour/${locationKey}?apikey=${PUBLIC_API_KEY}`
             ).then((response)=>{
                 hourlyForecast.set(response.data)
             });
