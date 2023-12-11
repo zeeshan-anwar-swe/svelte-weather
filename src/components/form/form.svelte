@@ -8,11 +8,9 @@
         fiveDayforecastWeather,
         oneDayforecastWeather,
         weatherLocation,
-        weatherLoading,
+        hourlyForecast,
     } from "../../store/store";
-    import { getDaysForcast } from "../../utils/extra-functions";
-
-    const VITE_API_KEY = "1bca3292f794a2420336dde3e1d81aea";
+    
     let cityName;
 
     const getWeatherData = async (e) => {
@@ -27,6 +25,12 @@
                     weatherLocation.set(response.data);
                     return response.data[0].Key;
                 });
+
+            const getHourlyForecast = await axios.get(
+                `http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/${locationKey}?apikey=${PUBLIC_API_KEY}`
+            ).then((response)=>{
+                hourlyForecast.set(response.data)
+            });
 
             // Getting current weather
             const getCurrentWeatherData = await axios

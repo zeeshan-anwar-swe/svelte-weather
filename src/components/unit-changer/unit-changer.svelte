@@ -8,12 +8,17 @@
 
 </script>
 
-<div>
+<div class="btn-countainer">
     <button class={cBtn? "active-btn": "btn"} on:click={() => isCelcius.set(true)}> C </button>
     <button class={fBtn? "active-btn": "btn"} on:click={() => isCelcius.set(false)}> F </button>
 </div>
 
 <style>
+    .btn-countainer{
+        display: flex;
+        gap: 1rem;
+    }
+
     .active-btn {
         display: flex;
         align-items: center;
@@ -22,9 +27,11 @@
         width: 1rem;
         height: 1rem;
         padding: 1rem;
-        border-radius: 100%;
+        border-radius: 0.5rem;
         color: white;
         background: black;
+        border: 1px solid black;
+        transition: all 0.3s ease-in-out;
     }
 
     .btn {
@@ -35,6 +42,7 @@
         width: 1rem;
         height: 1rem;
         padding: 1rem;
-        border-radius: 100%;
+        border-radius: 0.5rem;
+        transition: all 0.3s ease-in-out;
     }
 </style>

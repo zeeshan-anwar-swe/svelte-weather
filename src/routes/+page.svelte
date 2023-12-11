@@ -5,6 +5,7 @@
     import ForcastContainer from "../components/forcast/forcast-container.svelte";
     import HighlightContainer from "../components/highlights/highlight-container.svelte";
     import UnitChanger from "../components/unit-changer/unit-changer.svelte";
+    import ForecastSwitcher from "../components/forecast-switcher/forecast-switcher.svelte";
 
   
 
@@ -17,7 +18,7 @@
 
 <!-- {#if $currentWeather != null} -->
     <div class="main-content">
-        <UnitChanger/>
+        <ForecastSwitcher/>
         <ForcastContainer />
         <HighlightContainer />
     </div>
