@@ -4,6 +4,7 @@
     import axios from "axios";
     import ForcastContainer from "../components/forcast/forcast-container.svelte";
     import HighlightContainer from "../components/highlights/highlight-container.svelte";
+    import UnitChanger from "../components/unit-changer/unit-changer.svelte";
 
   
 
@@ -16,6 +17,7 @@
 
 <!-- {#if $currentWeather != null} -->
     <div class="main-content">
+        <UnitChanger/>
         <ForcastContainer />
         <HighlightContainer />
     </div>
